@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerFilms {
+    margin: 0%;
+}
+
+#filmCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filmsContainer {
+    position: relative;
+    border-radius: 5px;
+    background-color:
+        margin: 1%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 17%;
+}
