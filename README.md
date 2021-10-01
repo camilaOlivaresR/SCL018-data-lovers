@@ -2,6 +2,11 @@
 
 ### Definición del producto
 
+A raíz de la implementación de la encuesta indicada concluimos que nuestras usuarias son mujeres, de un promedio de 30 años de edad, y que no necesariamente son fans expertas en el Studio Ghibli, pero sí son aficionadas interesadas en conocer más acerca de su trabajo.
+Dichas usuarias quieren en general tener acceso a una plataforma que les permita conocer cuáles son todas las películas del Studio Ghibli, con la finalidad de interiorizarse sobre ellas.
+Son personas que prefieren páginas webs donde el diseño y la claridad de la información expuesta sea prioritaria y cuando buscan información cinematográfica se enfocan esencialmente en obtener la reseña, su puntuación y el año de lanzamiento.
+
+
 Nuestra investigación UX comenzó con la elaboración de una encuesta a través de la herramienta Formularios de Google. Esta fue respondida por 13 personas interesadas en Studio Ghibli.
 READ ME
 
@@ -25,6 +30,7 @@ d) Criterios de aceptación mínimos del proyecto
 
 
 ### Historias de usuario
+![alt text](/path/img.jpg "Title"
 * Yo como usuaria quiero una plataforma web que pueda MOSTRAR un listado de todas las películas del Studio Ghibli.
 * Yo como usuaria quiero poder ORDENAR las películas por su puntuación, en orden ascendente a descendente
 * Yo como usuaria quiero poder FILTRAR las películas con roles protagónicos femeninos
