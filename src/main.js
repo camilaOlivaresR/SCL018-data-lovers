@@ -27,12 +27,6 @@ for (let i = 0; i < films.length; i++) {
 }
 */
 
-
-const movieList = function(films) {
-  let list = '';
-  //reemplazamos el contenido de filmCard con una cadena vacía
-  document.getElementById('filmCard').innerHTML = '';
-
   for (let i = 0; i < films.length; i++) {
       //template strings
       list += `
