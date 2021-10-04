@@ -9,8 +9,6 @@ el problema (o problemas) que tiene tu usuario.
 
 ### Historias de usuario
 
-//![alt text](/path/img.jpg "Title")
-
 Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
 de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
 todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
@@ -27,7 +25,7 @@ a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
 #### Prototipo de baja fidelidad
 
 Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
+solución usando papel y lápiz. Te recomendamogits tomar fotos de todas las
 iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
 `README.md`.
 
