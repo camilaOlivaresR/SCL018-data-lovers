@@ -1,7 +1,7 @@
 header {
     display: flex;
     height : 150px;
-    background-color: #004080;
+    background-color: #340000
 }
 #posterFilms {
     display: grid;
