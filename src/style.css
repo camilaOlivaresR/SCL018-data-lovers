@@ -1,30 +1,14 @@
-body {
-    position: relative;
-    margin: 0;
+header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height : 150px;
+    background-color: #004080;
 }
-
-.containerFilms {
-    margin: 0%;
-}
-
-#filmCard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#posterFilms {
+    display: grid;
     justify-content: center;
-}
-
-.filmsContainer {
-    position: relative;
-    border-radius: 5px;
-    background-color:
-        margin: 1%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 17%;
+    text-align: center;
+    grid-template-columns: 20% 20% 20% 20% ;
+    grid-template-rows: 20% 20% 20% 20% ;
+    margin-top: 30px;
+    
 }
