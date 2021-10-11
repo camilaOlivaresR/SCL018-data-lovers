@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    height : 150px;
+    background-color: #004080;
+}
+#posterFilms {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 20% 20% 20% 20% ;
+    grid-template-rows: 20% 20% 20% 20% ;
+    margin-top: 30px;
+    
+}
