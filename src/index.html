@@ -13,28 +13,62 @@
 <body>
     <header>
         <nav>
-
         </nav>
         
     </header>
 
     <main>
+       
             <div class="imageContainer">
             <img id="mononoke" src="mononoke.png" alt="princesa mononoke con lanza en su mano"> 
             <div class="title">Catálogo de Studio Ghibli</div>
-            </div>
-            <div class="buttonsContainer">
-                <button id="filter" >filtrar por </button>
-                <button id="order">ordenar por mejor evaluada</button>
+            </div> 
+            
+       
+<section class= "sort-by">
+   <select id= "sort" class="combo-box-order">
+    <option value="sort-by" selected hidden>Ordenar por</option>
+    <option value="title" id= "asc-movie">Título</option>
+    <option value="rt_score">Mejor puntuadas</option>
+    <option value="release_date" id= "oldest-movie">Más recientes</option>
+  </select>
+
+          </section>
+ 
+
+
+           <!--
+            <section class="selectors">
+                <select name= "order" id="order-selector" class="combo-box-order">
+                  <option value="">Ordenar por</option>
+                  <option value="nombre">Nombre</option>
+                  <option value="año">Año</option>
+                  <option value="rt_score">Puntuación</option>
+                </select>
+
                 
-            </div>
-        
+                <select name= "filter" id="filter-selector" class="combo-box-order">
+                    <option value="">Filtrar por</option>
+                    <option value="director">Director</option>
+                    <option value="protagonistas">Protagonistas femeninas</option>
+                   
+                  </select>
+              </section>
+              -->
+  
+           
+  
+    
 
             <section id="posterFilms"></section>
         
         </main>
     <div id="root"></div>
+
     <script src="main.js" type="module"></script>
 </body>
 
+<footer>
+  <p>Todos los derechos reservados ®</p>  
+</footer>
 </html>
