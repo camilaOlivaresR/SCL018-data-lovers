@@ -26,11 +26,13 @@
 
 
         </div>
-        <div class="container-b">
-            <button id="filter">filtrar por </button>
-            <button id="order">ordenar por mejor evaluada</button>
-            
-        </div>
+        <section class="sort-by">
+            <select class="combo-box-order">
+              <option value="sort-by" selected hidden>Order by</option>
+              <option value="best-movie">Best movies</option>
+              <option value="rt_score"  id="byRate"> Low movies </option>
+            </select>
+          </section>
 
         <section id="posterFilms"></section>
 

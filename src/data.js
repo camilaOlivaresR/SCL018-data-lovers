@@ -1,6 +1,6 @@
 // estas funciones son de ejemplo
 
-export const sortData = (data, sortBy, sortOrder) => {
+export const sortData= (data, sortBy, sortOrder) => {
   
   const dataGhibli = data.films;
   
@@ -8,16 +8,19 @@ export const sortData = (data, sortBy, sortOrder) => {
     if (a[sortBy] > b[sortBy]) {
       return 1;
     }
-    if (a[sortBy] > b[sortBy]) {
+    if (a[sortBy] < b[sortBy]) {
       return -1;
     }
     return 0;
   });
-  if (sortOrder ==='') {
+ 
+  if (sortOrder ==='best-movie') {
     return resultSort.reverse();
   }
-else if (sortOrder === '') {
-   return resultSort.reverse
-}
+ else if (sortOrder === 'newest-score') {
+   return resultSort.reverse();
+ }
 return resultSort;
 }
+
+
