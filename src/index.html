@@ -10,15 +10,51 @@
 
 <body>
     <header>
-        <nav>
 
+        <!--<nav>
+            <img class="navLogo" src="imágenes/logo.png" alt="Logo de totoro del Studio Ghibli">
+        <i id="menuBurguer" class="fas fa-bars"></i>
+        <ul class="menuDisable">
+          <li class="menuList">
+            <a href="#home" class="menuItem">FILMOGRAFÍA</a>
+          </li>
+          <li class="menuList">
+            <a href="#temáticas" class="menuItem">TEMÁTICAS</a>
+          </li>
+        </ul>
+      
         </nav>
+      -->
+      <img class="logo" src="imágenes/logo.png" alt="Logo de totoro del Studio Ghibli">
+
     </header>
     <main>
-        
+      <div class="imageContainer">
+        <img id="mononoke" src="imágenes/mononoke.png" alt="princesa mononoke"> 
+        <div class="title">CATÁLOGO DE STUDIO GHIBLI</div>
+        <div class="subtitle">Las mejores 20 películas</div>
+          <!--<div class="container-b">
+            <button id="filter" >filtrar por </button>
+            <!--<button id="order">ordenar por mejor evaluada</button>-->
+
+            <section class="order">
+              <select id="orderByGender" class="combo-box-order">
+                <option value="sort-by" selected hidden>Ordenar por</option>
+                <option value="score" id="asc-score">Ranking</option>
+              </select>
+            </section>
+            
+        </div>
+    
             <section id="posterFilms"></section>
         
         </main>
+        <footer>
+          <h5>copy me, copiar es bueno </h5>
+      </footer>
+  
+
+     
     <div id="root"></div>
     <script src="main.js" type="module"></script>
 </body>
