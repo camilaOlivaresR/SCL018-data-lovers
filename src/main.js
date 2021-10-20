@@ -1,25 +1,34 @@
-import {scoreMovie} from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/ghibli/ghibli.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { sortData } from './data.js';
 
+import data from './data/ghibli/ghibli.js';
 
 let films = data.films;
 let printMovie = document.getElementById("posterFilms");
+//let currentFilms= films;
 
 const drawCard = (films) => {
-    return `
-     <section class="movieCard">
+  return `
+  <section class="movieCard">
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+     
+    
         <img alt="Poster" id="poster" src="${films.poster}">
-      
-        <h4> ${films.title}<h4>
-        <h5> ${films.release_date}<h5>
-       
+        <h3> ${films.title}<h3>
+        <h3> ${films.release_date}<h3>
+        <h3> ${films.rt_score}<h3>
+        </div>
+        <div class="flip-card-back"
+        <h3> ${films.description}<h3>
+        </div>
+        </div>
+      </div>
      </section>`
 };
 
 for (let i = 0; i < films.length; i++) {
-    printMovie.innerHTML += drawCard(films[i]);
+  printMovie.innerHTML += drawCard(films[i]);
 }
 
 
@@ -32,16 +41,16 @@ scoreOFMovie.addEventListener("click", function () {
 });*/
 
 
-const sortBy = "data.films.rt_score";
-const orderOption = document.querySelector(".combo-box-order");
+//const sortBy = "rt_score";
+const orderSelected = document.querySelector(".combo-box-order");
 
-orderOption.addEventListener("change", (event) => {
-  const chosenOrder = sortData(data, sortBy, event.target.value);
+orderSelected.addEventListener("change", (event) => {
+  const chosenOrder = sortData(data, event.target.value, event.target.value);
   const print = (films) => {
-  printMovie.innerHTML = "";
-  for (let i = 0; i < films.length; i++) {
-    printMovie.innerHTML += drawCard(films[i]);
+    printMovie.innerHTML = "";
+    for (let i = 0; i < films.length; i++) {
+      printMovie.innerHTML += drawCard(films[i]);
+    }
   };
-}
-print (chosenOrder);
+  print(chosenOrder);
 });

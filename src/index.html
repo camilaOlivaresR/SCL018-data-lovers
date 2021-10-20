@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghibli</title>
     <link rel="stylesheet" href="style.css" />
 
@@ -12,7 +12,7 @@
     <header>
         <button id="clear"> limpiar</button>
         <img class="logo" src="imagen/logo.png" alt="Studio Ghibli">
-       
+
     </header>
 
 
@@ -22,22 +22,21 @@
         <div class="container">
             <img class="mononoke" src="../imagen/fondo.png" alt="imagen princesa mononoke simbolo de poder">
             <div class="titulo"> Catalogo de Studio Ghibli 20 Peliculas</div>
-
-
-
         </div>
-        <section class="sort-by">
-            <select class="combo-box-order">
-              <option value="sort-by" selected hidden>Order by</option>
-              <option value="best-movie">Best movies</option>
-              <option value="rt_score"  id="byRate"> Low movies </option>
+
+        <section class= "selectors">
+            <select  class="combo-box-order">
+                <option value="sort_by" selected hidden>Ordenar por</option>
+                <option value="title">Titulos</option>
+                <option value="rt_score" >Mejor Puntuada </option>
+                <option value="release_date">Año de lanzamiento</option>
             </select>
-          </section>
+        </section>
 
         <section id="posterFilms"></section>
 
     </main>
-    <div id="root"></div>
+   
     <footer>
         <h5>copy me, copiar es bueno </h5>
     </footer>
