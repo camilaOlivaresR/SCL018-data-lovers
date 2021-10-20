@@ -25,50 +25,40 @@
             </div> 
             
        
-<section class= "sort-by">
-   <select id= "sort" class="combo-box-order">
-    <option value="sort-by" selected hidden>Ordenar por</option>
-    <option value="title" id= "asc-movie">Título</option>
+<section class= "selectors">
+   <select class="combo-box-order">
+    <option value=" ">Ordenar por</option>
+    <option value="title">Título</option>
     <option value="rt_score">Mejor puntuadas</option>
-    <option value="release_date" id= "oldest-movie">Más recientes</option>
+    <option value="release_date">Año de lanzamiento</option>
+
+  </select>
+
+  <select class="combo-box-filter">
+    <option value="">Filtrar por</option>
+    <option value="director">Director</option>
+    <option value="gender">Personaje femenino</option>
+
   </select>
 
           </section>
  
-
-
-           <!--
-            <section class="selectors">
-                <select name= "order" id="order-selector" class="combo-box-order">
-                  <option value="">Ordenar por</option>
-                  <option value="nombre">Nombre</option>
-                  <option value="año">Año</option>
-                  <option value="rt_score">Puntuación</option>
-                </select>
-
-                
-                <select name= "filter" id="filter-selector" class="combo-box-order">
-                    <option value="">Filtrar por</option>
-                    <option value="director">Director</option>
-                    <option value="protagonistas">Protagonistas femeninas</option>
-                   
-                  </select>
-              </section>
-              -->
-  
-           
-  
-    
+          
 
             <section id="posterFilms"></section>
         
         </main>
-    <div id="root"></div>
+
+        <footer>
+          <p>Todos los derechos reservados ®</p>  
+        </footer>
+        
+   <!-- <div id="root"></div>-->
 
     <script src="main.js" type="module"></script>
+
+    
 </body>
 
-<footer>
-  <p>Todos los derechos reservados ®</p>  
-</footer>
+
 </html>
