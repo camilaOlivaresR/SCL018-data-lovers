@@ -2,22 +2,24 @@
 
 import data from './data/ghibli/ghibli.js';
 import {sortData} from "./data.js";
+import {filterData} from "./data.js";
 
 /*ESTABLECIMIENTO DE VARIABLES*/
 let films = data.films;
 let printMovie= document.getElementById("posterFilms");
-/*let currentFilms = films;*/
+let currentFilms = films;
 
 /*CONFIGURACIÓN DE LAS TARJETAS QUE SE MOSTRARÁN EN EL HTML*/
 const drawCard = (films) => {
     return `
      <section class="movieCard">
-     <div class="movieFrame">
         <img class= "moviePoster" alt="Poster de la película" id="poster" src="${films.poster}">
         <figcaption class="movieName">${films.title}</figcaption>
         <figcaption class="movieYear">(${films.release_date})</figcaption>
-        <figcaption class="movieYear">${films.rt_score}</figcaption>
-        </div>
+        <figcaption class="movieScore">${films.rt_score}</figcaption>
+        
+        
+      
      </section>`
     };
 
@@ -40,15 +42,29 @@ for (let i=0; i < films.length; i++) {
 
 
 /*const sortBy = "rt_score";*/
-const orderOption = document.querySelector(".combo-box-order");
+const orderSelected = document.querySelector(".combo-box-order");
 
-orderOption.addEventListener("change", (event) => {
+orderSelected.addEventListener("change", (event) => {
   const chosenOrder = sortData(data, event.target.value, event.target.value);
-  const print = (films) => {
+  const print = (currentFilms) => {
     printMovie.innerHTML = "";
-    for (let i = 0; i < films.length; i++) {
+    for (let i = 0; i < currentFilms.length; i++) {
       printMovie.innerHTML += drawCard(films[i]);
     }
   }
   print(chosenOrder);
+});
+
+
+const filterSelected = document.querySelector(".combo-box-filter");
+
+filterSelected.addEventListener("change", (event) => {
+const chosenFilter = filterData(data, event.target.value, event.target.value);
+const print = (currentFilms) => {
+  printMovie.innerHTML = "";
+  for (let i = 0; i < currentFilms.length; i++) {
+    printMovie.innerHTML += drawCard(films[i]);
+  }
+}
+print(chosenFilter);
 });
