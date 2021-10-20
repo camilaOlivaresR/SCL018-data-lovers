@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -20,12 +21,38 @@ header {
     position:static;
     text-align: center;
     
+
+header {
+    display: flex;
+
+    height: 15vh;
+    background-color: #340000
 }
+
+.logo {
+    display: block;
+    margin-left: 80%;
+}
+
+#imageContainer {
+    display: flex;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    position: static;
+}
+
+#textImage {
+    font-size: 300px;
+}
+
+
 #mononoke {
     display: flex;
     position: relative;
     height: auto;
     width: 100%;
+
     opacity: 0.8;
  }
 
@@ -74,19 +101,53 @@ header {
     /*top: 283px;*/
     border-radius: 7px;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
+
+
     box-shadow: 0px 4px 4px 0px #00000040;
     color: white;
 
  }
 
+    text-align: left;
+}
+
+#order {
+    height: 40px;
+    width: 222px;
+    left: 14px;
+    top: 283px;
+    border-radius: 7px;
+    top: 283px;
+    border-radius: 7px;
+    background: #340000;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 9%;
+}
+
+.movieFrame {
+    background-color: #340000;
+    border-radius: 3%;
+    width: 75%;
+    text-align: center;
+    color: #ffff;
+    font-family: arial;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+
+
 #posterFilms {
     display: grid;
     justify-content: center;
     text-align: center;
+
     min-height: 100vh;
     column-gap: 10px;
     row-gap: 15px;
@@ -145,4 +206,5 @@ footer{
         letter-spacing: 0.1em;
         
     
+
 }
