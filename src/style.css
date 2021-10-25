@@ -121,7 +121,7 @@ margin-left: 0.5%;
     display: grid;
     justify-content: center;
     text-align: center;
-    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(20% 20% 20% 20% ));
     grid-auto-flow: dense;
     grid-template-columns: 20% 20% 20% 20% ;
     grid-template-rows: 20% 20% 20% 20% ;
@@ -138,6 +138,17 @@ footer {
     
 }
 .movieCard {
+    
+    width: 200px;
+    height: 360px;
+    color: #fff;
+    background-color: #ffff;
+    margin: 1em;
+    border-radius: 3% 3% 3% 3%;
+    font-size: 10px;
+
+}
+movieCardFilter {
     
     width: 200px;
     height: 360px;

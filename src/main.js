@@ -1,6 +1,14 @@
-import { sortData } from './data.js';
+import {sortData } from './data.js';
+
+import {genderFilter } from './data.js';
+
+import {filterData} from "./data.js";
+
 
 import data from './data/ghibli/ghibli.js';
+
+let newFilms = [...films]; //variable que contiene una copia de las películas de la data
+
 
 let films = data.films;
 let printMovie = document.getElementById("posterFilms");
@@ -25,23 +33,23 @@ const drawCard = (films) => {
         </div>
       </div>
      </section>`
+    
+};
+
+const drawCardPerson = (films) => {
+  return `
+  <section class="movieCardFilter">
+  <img alt="PosterFemale" id="posterFemale" src="${films.img}">
+        <h3> ${films.gender}<h3>
+        <h3> ${films.name}<h3>
+        </section>`
+    
 };
 
 for (let i = 0; i < films.length; i++) {
-  printMovie.innerHTML += drawCard(films[i]);
+  printMovie.innerHTML += drawCardPerson(films[i]);
 }
 
-
-/*let scoreOFMovie = document.getElementById("order");
-scoreOFMovie.addEventListener("click", function () {
-    document.getElementsById("posterFilms")[0].innerHTML = "";
-    
-
-
-});*/
-
-
-//const sortBy = "rt_score";
 const orderSelected = document.querySelector(".combo-box-order");
 
 orderSelected.addEventListener("change", (event) => {
@@ -54,3 +62,19 @@ orderSelected.addEventListener("change", (event) => {
   };
   print(chosenOrder);
 });
+
+
+
+const selGender = document.querySelector(".combo-box-filter");
+
+selGender.addEventListener("change", (event) => {
+  const genderPerson = genderFilter(data, event.target.value);
+    const print = (films) => {
+      printMovie.innerHTML = "";
+      for (let i = 0; i < films.length; i++) {
+  printMovie.innerHTML += drawCardPerson(films[i]);
+}
+    };
+    print(genderPerson);
+  });
+  

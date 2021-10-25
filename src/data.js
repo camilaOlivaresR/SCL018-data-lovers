@@ -1,4 +1,4 @@
-// estas funciones son de ejemplo
+
 
 export const sortData = (data, sortBy, sortOrder) => {
   
@@ -19,4 +19,13 @@ export const sortData = (data, sortBy, sortOrder) => {
 return movieSort;
 }
 
+export const genderFilter= (data) => {
+
+   const  femalePerson= data.sortDatafilms.forEach(function(e){
+    
+    const females = e.people.filter( (element) => element.gender === "Female");
+   
+});
+return femalePerson;
+};
 
