@@ -21,7 +21,7 @@ return movieSort;
 
 export const genderFilter= (data) => {
 
-   const  femalePerson= data.sortDatafilms.forEach(function(e){
+   const  femalePerson = data.sortDatafilms.forEach(function(e){
     
     const females = e.people.filter( (element) => element.gender === "Female");
    
