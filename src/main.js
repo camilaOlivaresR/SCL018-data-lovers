@@ -30,7 +30,8 @@ function showSlides() {
 //ESTABLECIMIENTO DE VARIABLES
 const films = data.films; // variable que contiene las películas de la data
 const printedMovies = document.getElementById("posterFilms"); // variable que contiene la section en html
-let newFilms = [...films]; //variable que contiene una copia de las películas de la data
+let newFilms = [...films]; //variable que contiene una copia de las películas de la data, hecha con "destructuring", que es ...
+// ... una forma de capturar datos de un objeto o array y asignarlos a variables. Disponible desde ES2015
 
 /*CONFIGURACIÓN DE LAS TARJETAS QUE SE MOSTRARÁN EN EL HTML*/
 const drawCard = (films) => {

@@ -10,9 +10,9 @@ export const anotherExample = () => {
 */
 
 export const sortData = (data, sortBy, sortOrder) => {
-  const dataGhibli = data.films;
+  //const dataGhibli = data.films;
 
-  const movieSort = dataGhibli.sort(function (a, b) {
+  const movieSort = data.sort(function (a, b) {
     if (a[sortBy] > b[sortBy]) {
       return 1;
     }
@@ -33,7 +33,7 @@ export const sortData = (data, sortBy, sortOrder) => {
   return movieSort;
 };
 
-export const filterData = (data, condition) => {
+export const filterData = (data) => {
   const infoGhibli = data.films;
 
   const movieFilter = infoGhibli.filter(function (films) {
@@ -41,8 +41,12 @@ export const filterData = (data, condition) => {
 
     //también funciona: return films.director.includes("Hayao Miyazaki");
   });
+  
   return movieFilter;
+  
 };
+
+
 /*
 
 export const genderFilter = (data) => {
