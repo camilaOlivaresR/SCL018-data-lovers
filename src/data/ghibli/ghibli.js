@@ -1630,7 +1630,7 @@ export default {
       "director": "Gorō Miyazaki",
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/09/%C3%96v%C3%A4rlden.jpg",
-      "release_date": "2006",
+      "release_date": 2006,
       "rt_score": 41,
       "people": [
         {
