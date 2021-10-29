@@ -66,7 +66,7 @@ for (let i=0; i < films.length; i++) {
 const orderSelected = document.querySelector(".combo-box-order");
 
 orderSelected.addEventListener("change", (event) => {
-  const chosenOrder = sortData(data, event.target.value, event.target.value);
+  const chosenOrder = sortData(newFilms, event.target.value, event.target.value);
   const print = (newFilms) => {
     displayMovies(newFilms);
   };
@@ -78,7 +78,7 @@ orderSelected.addEventListener("change", (event) => {
 const filterSelected = document.querySelector(".combo-box-filter");
 
 filterSelected.addEventListener("change", (event) => {
-  const chosenFilter = filterData(data, event.target.value);
+  const chosenFilter = filterData(newFilms, event.target.value);
   const print = (newFilms) => {
     displayMovies(newFilms);
   };

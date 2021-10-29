@@ -9,10 +9,12 @@ export const anotherExample = () => {
 };
 */
 
-export const sortData = (data, sortBy, sortOrder) => {
+export const sortData = (newFilms, sortBy, sortOrder) => {
   //const dataGhibli = data.films;
 
-  const movieSort = data.sort(function (a, b) {
+  //console.log(newFilms);
+
+  const movieSort = newFilms.sort(function (a, b) {
     if (a[sortBy] > b[sortBy]) {
       return 1;
     }
@@ -33,11 +35,11 @@ export const sortData = (data, sortBy, sortOrder) => {
   return movieSort;
 };
 
-export const filterData = (data) => {
-  const infoGhibli = data.films;
+export const filterData = (newFilms, director) => {
+  //const infoGhibli = data.films;
 
-  const movieFilter = infoGhibli.filter(function (films) {
-    return films.director === "Hayao Miyazaki";
+  const movieFilter = newFilms.filter(function (newFilms) {
+    return newFilms.director === director;
 
     //también funciona: return films.director.includes("Hayao Miyazaki");
   });
