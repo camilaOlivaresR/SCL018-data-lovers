@@ -9,62 +9,54 @@ export const anotherExample = () => {
 };
 */
 
+export const sortData = (newFilms, sortBy, sortOrder) => {
+  //const dataGhibli = data.films;
 
-export const sortData = (data, sortBy, sortOrder) => {
+  //console.log(newFilms);
 
-/*const dataGhibli = data.films;*/
+  const movieSort = newFilms.sort(function (a, b) {
+    if (a[sortBy] > b[sortBy]) {
+      return 1;
+    }
+    if (a[sortBy] < b[sortBy]) {
+      return -1;
+    }
+    return 0;
+  });
 
-const movieSort = data.films.sort(function (a,b){
-
-  if (a [sortBy] > b [sortBy]) {
-  return 1;
-}
-if (a [sortBy] < b [sortBy]) {
-  return -1;
-}
-return 0;
-});
-
-if (sortOrder === "rt_score") {
-  return movieSort.reverse();
+  if (sortOrder === "rt_score") {
+    return movieSort.reverse();
   }
-/*
+  /*
   else if (sortOrder === "release_date") {
   return movieSort.reverse();
   }
   */
-return movieSort;
+  return movieSort;
+};
 
-}
+export const filterData = (newFilms, director) => {
+  //const infoGhibli = data.films;
 
+  const movieFilter = newFilms.filter(function (newFilms) {
+    return newFilms.director === director;
 
-export const filterData = (data) => {
-
- 
-  const movieFilter = data.films.filter(function (films){
-
-    return films.director === "Hayao Miyazaki";
-   // return films.gender === "female";
-   //también funciona: return films.director.includes("Hayao Miyazaki")
-
+    //también funciona: return films.director.includes("Hayao Miyazaki");
   });
-  return movieFilter; 
   
-}
-
-/*
-export const filterData = (data) => {
-
-  const movieFilter = data.films.filter(filtering)
-  function filtering(input, selector) {
-    return director === "Hayao Miyazaki";
-  }
   return movieFilter;
-}
+  
+};
+
 
 /*
-export const filterData = (data, director) => {
- const filterResult = data.filter((film) => films.director === "Hayao Miyazaki")
-  return filterResult;
+
+export const genderFilter = (data) => {
+  
+  const femalePerson = data.films.forEach(function (e) {
+    const females = e.people.filter((element) => element.gender === "Female");
+    return females;
+  });
+  return femalePerson;
 };
 */
