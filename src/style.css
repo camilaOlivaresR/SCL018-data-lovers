@@ -13,6 +13,14 @@ header {
     width: 100%;
     background-color: #340000;
 }
+/*.container {
+  display: flex;
+  align-items: stretch;
+}
+*/
+.checked {
+  color: orange;
+}
 
 #logo {
   text-align: right;
@@ -166,6 +174,11 @@ font-family: fantasy;
     color:cornsilk;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
+}
+.movieScore {
+  color:cornsilk;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
 }
 
 footer{

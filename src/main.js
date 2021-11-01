@@ -38,11 +38,18 @@ const drawCard = (films) => {
   return `
   <section class="movieCard">
   
+
+
+  
     
         <img class= "moviePoster" alt="Poster de la película" id="poster" src="${films.poster}">
+     
+
         <figcaption class="movieName">${films.title}</figcaption>
         <figcaption class="movieYear">(${films.release_date})</figcaption>
-        <figcaption class="movieScore">${films.rt_score}</figcaption>
+        <span class="fa fa-star checked">
+        <i class="movieScore">${films.rt_score}</i>
+        </span>
         
      </section>`;
 };
