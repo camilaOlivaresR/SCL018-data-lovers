@@ -2,25 +2,87 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Ghibli</title>
-    <link rel="stylesheet" href="style.css" />
+  <!--meta información para ajustar página al ancho del viewport y fijar el tamaño inicial del visualización al cargar-->
+
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibli</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <header>
-        <nav>
+  <header>
 
-        </nav>
-    </header>
-    <main>
-        
-            <section id="posterFilms"></section>
-        
-        </main>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <img id="logo" src="logo.png" alt="logo del studio ghibli">
+    <h2 id= "title">Catálogo de películas | La colección completa</h2>
+    <nav>
+    </nav>
+
+  </header>
+
+  <main>
+<section class="container">
+
+    <div class="imageContainer"></div>
+
+        <div class="slider fade">
+        <img class="picture" src="mononoke.png" alt="princesa mononoke con lanza en su mano">
+        <div class="text">"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe." -
+        Miyazaki</div>
+        </div>
+
+        <div class="slider fade">
+        <img class="picture" src="chihiro.jpg" alt="princesa mononoke con lanza en su mano">
+        <div class="text">"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe." -
+        Miyazaki</div>
+        </div>
+
+        <div class="slider fade">
+        <img class="picture" src="kiky.jpg" alt="princesa mononoke con lanza en su mano">
+        <div class="text">"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe." -
+        Miyazaki</div>
+        </div>
+
+    </div>
+    <div style="text-align:center">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+    </div>
+
+
+    <section class="selectors">
+
+        <select class="combo-box-order">
+        <option value=" ">Ordenar por</option>
+        <option value="title">Título</option>
+        <option value="rt_score">Mejor puntuadas</option>
+        <option value="release_date">Año de lanzamiento</option>
+        </select>
+
+        <select class="combo-box-filter">
+        <option value=" ">Filtrar por</option>
+        <option value="Hayao Miyazaki">Dirigidas por Hayao Miyazaki</option>
+        <option value="gender">Personaje femenino</option>
+        </select>
+
+     </section>
+
+
+    <section id="posterFilms"></section>
+  </section>
+  </main>
+
+  <footer>
+    <p>Todos los derechos reservados ®</p>
+  </footer>
+
+
+  <script src="main.js" type="module"></script>
+
+
 </body>
+
 
 </html>
