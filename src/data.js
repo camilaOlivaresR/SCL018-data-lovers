@@ -14,7 +14,7 @@ export const sortData = (newFilms, sortBy, sortOrder) => {
 
   //console.log(newFilms);
 
-  const movieSort = newFilms.sort(function (a, b) {
+  const movieSort = newFilms.sort((a, b) => {
     if (a[sortBy] > b[sortBy]) {
       return 1;
     }
@@ -38,13 +38,11 @@ export const sortData = (newFilms, sortBy, sortOrder) => {
 export const filterData = (newFilms, director) => {
   //const infoGhibli = data.films;
 
-  const movieFilter = newFilms.filter(function (newFilms) {
-    return newFilms.director === director;
+  
+    return newFilms.filter(newFilms =>newFilms.director === director);
+    //funcion flecha simplificada
 
     //también funciona: return films.director.includes("Hayao Miyazaki");
-  });
-  
-  return movieFilter;
   
 };
 

@@ -56,6 +56,7 @@ font-family: fantasy;
   vertical-align: middle;
   width: 100%;
  }
+ 
 
 /* Fading animation */
  .fade {
@@ -142,7 +143,7 @@ font-family: fantasy;
     row-gap: 15px;
     grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
     grid-auto-flow: dense;
-    grid-template-columns: 20% 20% 20% 20% ;
+    grid-template-columns: 20% 20% 20% 20% ; 
   /*  grid-template-rows: 20% 20% 20% 20% ;*/
     margin-top: 30px;
    

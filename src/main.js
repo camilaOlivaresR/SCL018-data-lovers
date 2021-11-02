@@ -88,10 +88,14 @@ filterSelected.addEventListener("change", (event) => {
   const chosenFilter = filterData(newFilms, event.target.value);
   const print = (newFilms) => {
     displayMovies(newFilms);
+    console.log(chosenFilter);
   };
 
+
   print(chosenFilter);
+ 
 });
+
 
 /* FUNCIÓN QUE EXTRAE PERSONAJES FEMENINAS
 data.films.forEach(function(e){
