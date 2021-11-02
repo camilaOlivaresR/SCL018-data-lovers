@@ -30,7 +30,7 @@ font-family: fantasy;
     height: auto;
     /*position:static;*/
     text-align: center;
-    max-width: 1000px;
+    max-width: 1200px;
     position: relative;
     margin: auto;
     
@@ -40,7 +40,7 @@ font-family: fantasy;
     position: relative;
     height: auto;
     width: 100%;
-    display: none;
+   
 
  }
 
@@ -74,9 +74,12 @@ font-family: fantasy;
 
 
  .text{
-    position: absolute;
-    top: 40%;
-    left: 55%;
+   position: absolute;
+      top: 40%;
+      left: 40%;
+   
+      width: 100%;
+      height: 50%;
     font-family: fantasy;
     font-size: 220%;
     color: white;
@@ -125,7 +128,19 @@ font-family: fantasy;
 
  }
 
+ *::before{ /*este selector inserta algo antes del elemento llamado inicialmente */
+   box-sizing:border-box;
+ }
+
 #posterFilms {
+
+   display: flex; /*el elemento padre se comporta en bloque y no en línea*/
+   flex-flow: row wrap; /*es un atajo de flex-direction y flex-wrap*/
+   justify-content: space-evenly; /*distrubye el espacio entre las tarjetas de forma equivalente*/
+   align-content: space-around;
+   max-width: 1200 px;
+   margin: auto;
+  /*
     display: grid;
     justify-content: center;
     text-align: center;
@@ -134,13 +149,67 @@ font-family: fantasy;
     row-gap: 15px;
     grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
     grid-auto-flow: dense;
-    grid-template-columns: 20% 20% 20% 20% ;
+    grid-template-columns: 20% 20% 20% 20% ;*/
   /*  grid-template-rows: 20% 20% 20% 20% ;*/
-    margin-top: 30px;
+    /*margin-top: 30px;*/
    
 
 }
 
+
+.movieCard {
+  color: #340000;
+  background-color: #340000;
+  border-radius: 3%;
+  text-align: center;
+  color: cornsilk;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 3% 3% 3% 3%;
+  font-size: 12px;
+  width: 20%;
+  height: auto;
+  margin: 1em;
+  flex: 0 0 50%;
+  
+}
+
+
+@media (min-width: 576px) { 
+  .movieCard{
+    flex:0 0 50%;
+  }
+}
+
+
+@media (min-width: 768px) { 
+  .movieCard{
+    flex:0 0 33.33333333333333%;
+  }
+}
+
+@media (min-width: 992px) { 
+  .movieCard{
+    flex:0 0 25%;
+  }
+ }
+
+
+@media (min-width: 1200px) { 
+  
+  .movieCard{
+    flex:0 0 20%;
+  }
+}
+
+
+.moviePoster {
+width: 100%;
+height: auto;
+  text-align: center;
+  border-radius: 3% 3% 0% 0%;
+}
+ 
+/*
 .movieCard {
     color: #340000;
     background-color: #340000;
@@ -161,7 +230,7 @@ font-family: fantasy;
     border-radius: 3% 3% 0% 0%;
 }
    
-
+*/
 .movieYear {
     color:cornsilk;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
