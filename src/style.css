@@ -92,10 +92,7 @@ font-family: fantasy;
     text-shadow:  black 0.1em 0.1em 0.2em;
  }
 
- .selectors {
-    display: flex;
-    justify-items: center;
-}
+
 
  .combo-box-order {
 
