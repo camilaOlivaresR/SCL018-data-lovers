@@ -15,7 +15,8 @@ header {
 }
 
 #logo {
-  text-align: right;
+  display: block;
+    margin-left: 80%;
 }
 
 #title { 
@@ -41,7 +42,6 @@ font-family: fantasy;
     height: auto;
     width: 100%;
    
-
  }
 
  .picture{
@@ -74,14 +74,11 @@ font-family: fantasy;
 
 
  .text{
-   position: absolute;
-      top: 40%;
-      left: 40%;
    
-      width: 100%;
-      height: 50%;
+    position: absolute;
+    margin:  1em 20em 5em;
     font-family: fantasy;
-    font-size: 220%;
+    font-size: 1.9em;
     color: white;
     text-shadow:  black 0.1em 0.1em 0.2em;
  }
@@ -174,29 +171,65 @@ font-family: fantasy;
 }
 
 
-@media (min-width: 576px) { 
+@media (max-width: 425px) { 
   .movieCard{
     flex:0 0 50%;
   }
+
+  .combo-box-order{
+    flex:0 0 50%;
+  }
+
+  .combo-box-filter{
+    flex:0 0 50%;
+  }
+
+  .text{
+    flex: 0 0 25%;
+    
+  }
+
 }
 
 
-@media (min-width: 768px) { 
+@media (min-width: 426px) and (max-width: 768px) { 
   .movieCard{
+    flex:0 0 33.33333333333333%;
+  }
+  .combo-box-order{
+    flex:0 0 33.33333333333333%;
+  }
+  .combo-box-filter{
     flex:0 0 33.33333333333333%;
   }
 }
 
-@media (min-width: 992px) { 
+
+
+@media (min-width: 769px) and (max-width: 992px) { 
   .movieCard{
+    flex:0 0 25%;
+  }
+  .combo-box-order{
+    flex:0 0 25%;
+  }
+
+  .combo-box-filter{
     flex:0 0 25%;
   }
  }
 
 
-@media (min-width: 1200px) { 
+@media (min-width: 993px) { 
   
   .movieCard{
+    flex:0 0 20%;
+  }
+  .combo-box-order{
+    flex:0 0 20%;
+  }
+
+  .combo-box-filter{
     flex:0 0 20%;
   }
 }
