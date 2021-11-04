@@ -1,4 +1,3 @@
-
 /*IMPORTACIÓN DE MÓDULOS*/
 
 import data from "./data/ghibli/ghibli.js";
@@ -38,13 +37,10 @@ const drawCard = (films) => {
   return `
   <section class="movieCard">
   
-
-
   
     
         <img class= "moviePoster" alt="Poster de la película" id="poster" src="${films.poster}">
      
-
         <figcaption class="movieName">${films.title}</figcaption>
         <figcaption class="movieYear">(${films.release_date})</figcaption>
         <span class="fa fa-star checked">
@@ -106,7 +102,6 @@ data.films.forEach(function(e){
 */
 
 /* FILTRANDO PERSONAJES FEMENINOS DE MIYAZAKI
-
 const drawCardPerson = (films) => {
   return `
   <section class="movieCardFilter">
@@ -116,13 +111,10 @@ const drawCardPerson = (films) => {
         </section>`
     
 };
-
 const femenineGender = document.querySelector(".combo-box-filter");
-
 femenineGender.addEventListener("change", (event) => {
   const genderPerson = genderFilter(data, event.target.value);
   console.log(genderPerson);
-
   const print = (femalePerson) => {
       printedMovies.innerHTML = "";
       for (let i = 0; i < femalePerson.length; i++) {
