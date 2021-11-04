@@ -1,4 +1,3 @@
-
 /*IMPORTACIÓN DE MÓDULOS*/
 
 import data from "./data/ghibli/ghibli.js";
@@ -13,19 +12,19 @@ function showSlides() {
   var slides = document.getElementsByClassName("slider");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
-
-
 
 //ESTABLECIMIENTO DE VARIABLES
 const films = data.films; // variable que contiene las películas de la data
@@ -38,13 +37,10 @@ const drawCard = (films) => {
   return `
   <section class="movieCard">
   
-
-
   
     
         <img class= "moviePoster" alt="Poster de la película" id="poster" src="${films.poster}">
      
-
         <figcaption class="movieName">${films.title}</figcaption>
         <figcaption class="movieYear">(${films.release_date})</figcaption>
         <span class="fa fa-star checked">
@@ -73,7 +69,11 @@ for (let i=0; i < films.length; i++) {
 const orderSelected = document.querySelector(".combo-box-order");
 
 orderSelected.addEventListener("change", (event) => {
-  const chosenOrder = sortData(newFilms, event.target.value, event.target.value);
+  const chosenOrder = sortData(
+    newFilms,
+    event.target.value,
+    event.target.value
+  );
   const print = (newFilms) => {
     displayMovies(newFilms);
   };
@@ -91,11 +91,8 @@ filterSelected.addEventListener("change", (event) => {
     console.log(chosenFilter);
   };
 
-
   print(chosenFilter);
- 
 });
-
 
 /* FUNCIÓN QUE EXTRAE PERSONAJES FEMENINAS
 data.films.forEach(function(e){
@@ -106,7 +103,6 @@ data.films.forEach(function(e){
 */
 
 /* FILTRANDO PERSONAJES FEMENINOS DE MIYAZAKI
-
 const drawCardPerson = (films) => {
   return `
   <section class="movieCardFilter">
@@ -116,13 +112,10 @@ const drawCardPerson = (films) => {
         </section>`
     
 };
-
 const femenineGender = document.querySelector(".combo-box-filter");
-
 femenineGender.addEventListener("change", (event) => {
   const genderPerson = genderFilter(data, event.target.value);
   console.log(genderPerson);
-
   const print = (femalePerson) => {
       printedMovies.innerHTML = "";
       for (let i = 0; i < femalePerson.length; i++) {
@@ -133,14 +126,14 @@ femenineGender.addEventListener("change", (event) => {
   });
   */
 
-  /*const drawCard = (films) => {
+/*const drawCard = (films) => {
   return `
   <section class="movieCard">
   /* <div class="flip-card">
   <div class="flip-card-inner">
    <div class="flip-card-front"> */
-    
-   /*
+
+/*
    <div class="flip-card-back"
    <h3> ${films.description}<h3>
    </div>
