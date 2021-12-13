@@ -28,7 +28,7 @@ describe('sortData', () => { //Describe es una palabra reservada que da inicio a
       { title: 'The Tale of the Princess Kaguya', director: 'Isao Takahata', release_date: '2013', rt_score: 100 },
     ]
 
-    expect(sortData(data, 'title', 'title')).toEqual(result);
+    expect(sortData(data, 'title')).toEqual(result);
     // se da como parámetro de la función sortData la constante declarada inicialmente, luego el value que ocupa sort para llamar al título
     //y luego se repite el mismo value porque determina el orden (deben ser 3 parámetros porque la función original los tiene)
     });
@@ -44,7 +44,7 @@ describe('sortData', () => { //Describe es una palabra reservada que da inicio a
 
     ]
 
-    expect(sortData(data, 'release_date', 'release_date')).toEqual(result);
+    expect(sortData(data, 'release_date')).toEqual(result);
     // se da como parámetro de la función sortData la constante declarada inicialmente, luego el value que ocupa sort para llamar al año
     //y luego se repite el mismo value porque determina el orden (deben ser 3 parámetros porque la función original los tiene)
     });
