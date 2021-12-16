@@ -35,7 +35,7 @@ les permiten ordenar la data en base a un criterio de puntuación, por lo que pu
 películas han sido más exitosas. Por último, pueden también filtrar la información para conocer los 
 directores de dichas obras.</p>
 
-<p>d) Historias de Usuario: ![alt text](/path/img.jpg "Title" 
+<p>d) Historias de Usuario:
 Considerando lo ya expresado, definimos cuatro historias de usuaria, que son las siguientes:</p>
 
 <p>1° "Yo como usuaria aficionada de studio Ghibli quiero una plataforma web que pueda MOSTRAR un 
