@@ -92,7 +92,7 @@ Comenzamos esbozando un prototipo de baja fidelidad para visualizar qué era lo 
 tener nuestra página web. Luego realizamos un diagrama de flujo para definir los puntos de interacción 
 de las usuarias con la página, intentando propiciar la menor cantidad de "clicks" posible.
 
-<img src="/src/imágenes/Prototipo.png" alt="Prototipo de baja fidelidad" title="Prototipo de baja fidelidad" /></p>
+Prototipo de baja fidelidad:
 
 <p>b) Definición en alta fidelidad. Posteriormente, elaboramos un prototipo de alta fidelidad empleando 
 Figma, pensado como nuestra solución ideal y definitiva al problema de las usuarias. Nos inspiramos 
@@ -109,8 +109,7 @@ se trata de personajes, por lo que nos inspiramos en la gama de colores anaranja
 existente en la película sobre Mononoke y así llegamos a nuestra versión definitiva del nuevo 
 prototipo.
 
-<img src="/src/imágenes/PrototipoI.png" alt="Prototipo de alta fidelidad" title="Prototipo de alta fidelidad" />
-<img src="/src/imágenes/PrototipoII.png" alt="Prototipo de alta fidelidad" title="Prototipo de alta fidelidad" /></p>
+Prototipo de alta fidelidad:
 
 <p>c) Referencias visuales. 
 Tuvimos en cuenta tres páginas web que nos inspiraron. La primera de ellas es 
